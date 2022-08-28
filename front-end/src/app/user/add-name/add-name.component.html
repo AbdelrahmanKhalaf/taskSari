@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <form [formGroup]="form" (ngSubmit)="addName()">
+            <div class="form-group">
+                <label for="exampleInputEmail1">First Name</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Frist Name" formControlName="name">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Last Name</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Last Name" formControlName="lastName">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
